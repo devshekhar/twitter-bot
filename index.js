@@ -22,8 +22,8 @@ app.use(express.urlencoded({
   extended: true
 }));
 app.use('/twitts',twitts);
-app.get("/test", function (req, res) {
-    res.send("test")
+app.get("/", function (req, res) {
+    res.send("Welcome to twitter bot")
     })
 
 app.listen(3000,() =>{
